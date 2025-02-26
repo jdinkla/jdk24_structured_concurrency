@@ -25,12 +25,12 @@ task<JavaExec>("Listing1") {
     classpath = sourceSets["main"].runtimeClasspath
 }
 
-task<JavaExec>("Listing4") {
-    mainClass.set("Listing4")
+task<JavaExec>("Listing5") {
+    mainClass.set("Listing5")
     classpath = sourceSets["main"].runtimeClasspath
 }
 
-task<JavaExec>("Listing5") {
-    mainClass.set("Listing5")
+task<JavaExec>("Listing7") {
+    mainClass.set("Listing7")
     classpath = sourceSets["main"].runtimeClasspath
 }
