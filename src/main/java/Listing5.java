@@ -1,3 +1,6 @@
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.StructuredTaskScope;
+
 void main() {
     try (var scope = new StructuredTaskScope.ShutdownOnSuccess<>()) {
         scope.fork(this::fetchFromCache);

@@ -1,3 +1,8 @@
+import java.util.Queue;
+import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.StructuredTaskScope;
+import java.util.stream.Stream;
+
 class CustomScope<T> extends StructuredTaskScope<T> {
     private final Queue<T> results = new ConcurrentLinkedQueue<>();
     private final Queue<Throwable> exceptions = new ConcurrentLinkedQueue<>();
